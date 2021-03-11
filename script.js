@@ -46,7 +46,6 @@ function setAttributes(element, attributes) {
 async function displayPhotos() {
   imagesLoaded = 0;
   totalImages = photosArray.length;
-  console.log("total Images", totalImages);
   photosArray.forEach((photos) => {
     //Create <a> to link to Unsplash
     const item = document.createElement("a");
@@ -78,7 +77,6 @@ window.addEventListener("scroll", () => {
   ) {
     ready = false;
     getPhotos();
-    console.log("Load more");
   }
 });
 
